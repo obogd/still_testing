@@ -5,17 +5,21 @@ my_button.onclick = function(){
 
   const name = document.getElementById('name');
 
+let classNames = name.classList;
+
+
   if (name.value === ""){
-    name.style.border = '2px solid red';
+    classNames.add("red");
   } else {
-    name.style.border = 'none';
+   classNames.remove("red");
   }
 
   const email = document.getElementById('email');
+	let classEmails = email.classList;
 
 if (email.value === ""){
-	email.style.border = '2px solid red';
+	classEmails.add("red");
 } else { 
-email.style.border = 'none';
+classEmails.remove("red");
 }
 }
