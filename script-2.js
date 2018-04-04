@@ -22,4 +22,12 @@ if (email.value === ""){
 } else { 
 classEmails.remove("red");
 }
+
+if (name.value !="" && email.value !=""){
+
+alert("Спасибо, ваше сообщение отправлено!");	
+document.getElementById('hide').style.display = 'none';	
+	
 }
+
+ }
