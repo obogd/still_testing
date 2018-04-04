@@ -1,14 +1,17 @@
-const x = 1;
-console.log ("первая переменная равна " + x);
 
-const y = 2;
-console.log ("вторая переменная равна " + y);
+let x = prompt('Задайте переменную х');
 
+let y = prompt('Задайте переменную y');
 
-parseInt ("x", 10);
-parseInt ("y", 10);
+x = parseInt(x, 10);
 
-let sum = x + y;
-console.log (sum);
-alert("сумма двух переменных равна " + sum);
+y = parseInt(y, 10);
+
+var z = x + y;
+z = parseInt(z, 10);
+
+console.log (z);
+alert("сумма двух переменных равна " + z);
+ 
+
  
